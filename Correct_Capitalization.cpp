@@ -17,7 +17,7 @@ int main()
           count++;
           
       }
-      else if(str[0]>='A' && str[0]<='Z')
+      if(str[0]>='A' && str[0]<='Z')
       {
           found=1;
           break;
