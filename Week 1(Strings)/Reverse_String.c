@@ -10,7 +10,7 @@ int main()
    
   int a=str.size();
   
-  for(int i=0; i<a/2; i++)
+  for(int i=0; i<=a/2; i++)
   {
       temp=str[i];
       str[i]=str[a-i-1];
