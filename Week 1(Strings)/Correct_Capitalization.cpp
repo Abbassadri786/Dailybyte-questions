@@ -10,21 +10,19 @@ int main()
   
   int a=str.size(),found=0,count=0;
   
-  for(int i=0; i<a; i++)
-  {
-      if(str[i]>='A' && str[i]<='Z')
-      {
-          count++;
-          
-      }
-      if(str[0]>='A' && str[0]<='Z')
+  if(str[0]>='A' && str[0]<='Z')
       {
           found=1;
-          break;
       }
       
+  
+  for(int i=0; i<a; i++)
+  {
+      if(str[i]>='a' && str[i]<='z'){
+        count++; 
+      } 
   }
-  if(count==0 || found==1)
+  if((count==0 && found==1) || (count==(a-1) && found==1) ||(count==a && found!=1))
   {
       cout<<"true"<<endl;
   }
