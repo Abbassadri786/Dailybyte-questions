@@ -13,21 +13,26 @@ int main()
    
    for(int i=0; i<a; i++)
    {
-       if(str[i]=='R' || str[i]=='U')
-       {
+       if(str[i]=='R'){
            c1++;
        }
-       else{
+       else if(str[i]=='L'){
+           c1--;
+       }
+       else if(str[i]=='U'){
            c2++;
+       }
+       else if(str[i]=='D'){
+           c2--;
        }
    }
    
-   int result=c1-c2;
-   if(result==0){
-    cout<<"true";   
+   
+   if(c1==0 && c2==0){
+    return true;   
    }
    else{
-       cout<<"false";
+       return false;
    }
    
    return 0;
